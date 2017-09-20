@@ -44,6 +44,8 @@ a {
 
 /* слайдер инфо */
 
+/* партнёры */
+
 .partners ul{
     display: flex;
     flex-direction: row;
@@ -56,3 +58,124 @@ a {
     display: inline;
     list-style-type: none;
 }
+
+/* наша компания */
+
+.about_us {
+    height: 544px;
+    width: 1154px;
+    background-color: #e7e7e7;
+    margin: 0 auto;
+}
+
+.company_info {
+    float: left;
+    width: 620px; /*680*/
+    padding-left: 50px;
+    padding-top: 30px;
+    color: #929292;
+}
+
+.company_info h2{
+    text-transform: uppercase;
+    color: #3c3c3c;
+}
+
+.company_info h2:after {
+    content: ' ';
+    display: block;
+    width: 75px;
+    height: 5px;
+    background-color: #e9b637;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.company_info ul {
+    padding-left: 20px;
+    margin-top: 37px;
+    width: 410px;
+    margin-bottom: 60px;
+}
+
+.company_info ul li{
+    color: #e9b637;
+    margin-bottom: 10px;
+}
+
+.company_info ul li span {
+    color: #929292;
+    font-size: 14px;
+}
+
+.company_info a {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 0 40px 0 40px;
+    background: linear-gradient(to bottom, #e7e7e7 0%,#e7e7e7 30%,#e9b637 30%,#e9b637 30%,#e9b637 72%,#e9b637 72%,#e7e7e7 72%,#e7e7e7 72%,#e7e7e7 100%);
+}
+
+.dispatch {
+    float: right;
+    width: 363px;
+    background-color: #3c3c3c;
+    height: 514px;
+    padding-left: 38px;
+    padding-top: 30px;
+    padding-right:37px;
+}
+
+.dispatch h2{
+    text-transform: uppercase;
+    color: white;
+}
+
+.dispatch h2:after {
+    content: ' ';
+    display: block;
+    width: 75px;
+    height: 5px;
+    background-color: #e9b637;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.dispatch p {
+    color: #ededed;
+    letter-spacing: 1.6px;
+}
+
+.dispatch form p {
+    font-size: 11.6px;
+    color: #595959;
+    letter-spacing: 1px;
+    margin-bottom: 44px;
+}
+
+.dispatch form input[type='email'] {
+    border: 1px solid #8a8a8a;
+    background-color: #515151;
+    width: 320px;
+    height: 45px;
+    margin-top: 25px;
+    padding: 2px 5px 2px 32px;
+    font-size: 14.9px;
+    font-family: "Century Gothic";
+    margin-bottom: 10px;
+}
+
+.dispatch form input[type='submit' ] {
+    background-color: #e9b637;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 25px;
+    font-family: "Century Gothic";
+    font-size: 19px;
+    color: #3c3c3c;
+    letter-spacing: 2px;
+}
+
+
