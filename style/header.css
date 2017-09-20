@@ -1,12 +1,3 @@
-body {
-    padding: 0;
-    margin: 0;
-    font-family: "Century Gothic";
-}
-
-a {
-    text-decoration: none;
-}
 .user_menu {
     display: flex;
     background-color: #3c3c3c;
@@ -62,33 +53,4 @@ a {
 
 .site_menu ul li a{
     color: #3c3c3c;
-}
-
-.categories {
-    border-top: 1px solid #d1d1d1;
-    border-bottom: 1px solid #d1d1d1;
-
-}
-
-.categories ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 295px;
-}
-
-.categories ul li {
-    list-style-type: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 10pt;
-    width: 145px;
-    height: 223px;
-}
-.categories ul li a img {
-
-}
-.categories ul li a {
-    color: #3c3c3c;
-    font-weight: bold;
 }

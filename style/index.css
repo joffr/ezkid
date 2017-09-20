@@ -1,0 +1,58 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Century Gothic";
+}
+
+a {
+    text-decoration: none;
+}
+
+/* меню категорий */
+
+.categories {
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+
+}
+
+.categories ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 295px;
+}
+
+.categories ul li {
+    list-style-type: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10pt;
+    width: 145px;
+    height: 223px;
+}
+
+.categories ul li:last-child {
+    margin-right: 100px;
+}
+
+
+.categories ul li a {
+    color: #3c3c3c;
+    font-weight: bold;
+}
+
+/* слайдер инфо */
+
+.partners ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.partners ul li {
+    display: inline;
+    list-style-type: none;
+}
