@@ -178,4 +178,22 @@ a {
     letter-spacing: 2px;
 }
 
+footer {
+    background-color: #464646;
+    width: 100%;
+    margin-top: 50px;
+}
 
+.footer_bottom {
+    background-color: #3c3c3c;
+    display: flex;
+    align-content: center;
+}
+
+.footer_bottom p {
+    color: #9c9c9c;
+}
+
+.footer_bottom ul li {
+    display: inline;
+}
