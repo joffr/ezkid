@@ -1,0 +1,21 @@
+footer {
+    background-color: #464646;
+    margin-top: 50px;
+}
+
+.footer_bottom {
+    background-color: #3c3c3c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_bottom p {
+    color: #9c9c9c;
+    font-size: 12px;
+    margin-right: 50%;
+}
+
+.footer_bottom ul li {
+    display: inline;
+}
