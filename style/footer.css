@@ -3,6 +3,65 @@ footer {
     margin-top: 50px;
 }
 
+.footer_top {
+    margin-left: 165px;
+    margin-right: 165px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    width: 250px;
+    height: 266px;
+}
+
+.address p {
+    color: #7f7f7f;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.user_links {
+    padding: 0;
+}
+
+.user_links li{
+    display: inline;
+    list-style-type: none;
+}
+
+.user_links li a {
+    color: #e5e5e5;
+}
+
+.phone_info a {
+    font-size: 26px;
+    color: white;
+}
+.map {
+    width: 500px;
+    text-align: center;
+}
+
+.map ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.map ul li {
+    display: inline;
+}
+
+.map ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
 .footer_bottom {
     background-color: #3c3c3c;
     display: flex;
