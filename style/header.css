@@ -12,6 +12,8 @@
 }
 .user_menu a[href="tel:+79000000000"]{
     color: #d9aa38;
+    padding-left: 22px;
+    background: url("../images/header/phone_logo.png") no-repeat;
 }
 
 .user_menu input[type="search"] {
@@ -24,6 +26,14 @@
     background: #3c3c3c url("../images/header/search_logo.png") no-repeat 215px;
 }
 
+.user_menu input[type="search"]:hover::-webkit-input-placeholder {
+    color: #e4e4e4;
+}
+
+.user_menu input[type="search"]:hover {
+    background: #3c3c3c url("../images/header/search_logo_hover.png") no-repeat 215px;
+}
+
 .user_menu a[href="#"] {
     font-size: 10pt;
 }
@@ -33,6 +43,16 @@
     font-weight: bold;
     padding-left: 22px;
     background: url("../images/header/user_logo.png") no-repeat;
+}
+
+.user:hover {
+    color: #dfaf37;
+    background: url("../images/header/user_logo_hover.png") no-repeat;
+}
+
+.user:active {
+    color: #989898;
+    background: url("../images/header/user_logo_click.png") no-repeat;
 }
 
 .basket {
@@ -47,7 +67,7 @@
     height: 75px;
 }
 
-.site_menu ul {
+.menu_categories {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -56,21 +76,73 @@
     height: 75px;
 }
 
-.site_menu ul li{
+.menu_categories li{
     list-style-type: none;
     font-weight: bold;
 }
 
-.site_menu ul li:first-child{
+.all_categories {
     margin-right: 300px;
     text-transform: uppercase;
     background: url("../images/header/plus.png") no-repeat 130px;
 }
 
-.site_menu ul li a{
+.menu_categories li:hover ul {
+    display: block;
+}
+
+.menu_categories li a{
     color: #3c3c3c;
 }
 
-.site_menu ul li a:first-child {
+.menu_categories li a:hover {
+    color: #dfaf37;
+}
+
+.menu_categories li a:active {
+    color: #989898;
+}
+
+.all_categories {
     padding-right: 22px;
 }
+
+.nested_list {
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f0f0f0;
+    width: 100%;
+    z-index: 2;
+    padding-left: 9%;
+    padding-top: 20px;
+}
+
+.nested_list li {
+    margin-bottom: 15px;
+}
+
+.nested_list li ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+.nested_list li ul {
+    padding: 0;
+    display: flex;
+}
+
+.nested_list li ul li a {
+    font-weight: normal;
+    color: #a59d9d;
+    font-size: 16px;
+    text-transform: none;
+}
+
+.nested_list li a {
+    font-weight: normal;
+    color: #a59d9d;
+    font-size: 16px;
+    text-transform: none;
+}
+

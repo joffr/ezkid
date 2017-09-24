@@ -133,7 +133,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-size: 10pt;
-    width: 145px;
+    width: 160px;
     height: 223px;
 }
 
@@ -155,6 +155,7 @@ a {
     align-items: center;
     padding-top: 38px;
     padding-bottom: 38px;
+    border-bottom: 1px solid #d1d1d1;
 }
 
 .info_buttons {
