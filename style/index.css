@@ -113,6 +113,7 @@ a {
 .third_slide {
     background: url("../images/slider_promo/laptop_slider.png") no-repeat 500px;
 }
+
 /* меню категорий */
 
 .categories {
@@ -140,7 +141,6 @@ a {
     margin-right: 100px;
 }
 
-
 .categories ul li a {
     color: #3c3c3c;
     font-weight: bold;
@@ -148,7 +148,84 @@ a {
 
 /* слайдер инфо */
 
+.slider_info {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+.info_buttons {
+    padding: 30px 50px 0 0;
+    border-right: 1px solid #d1d1d1;
+    float: left;
+}
+
+.info_buttons li{
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.info_buttons a {
+    border: 1px solid #3c3c3c;
+    text-transform: uppercase;
+}
+
+.delivery_button {
+    padding: 8px 70px 8px 70px;
+    background-color: #3c3c3c;
+    color: #e1b037;
+}
+
+.guarantee_button {
+    padding: 8px 75px 8px 75px;
+    color: #3c3c3c;
+}
+
+.credit_button {
+    padding: 8px 85px 8px 85px;
+    color: #3c3c3c;
+}
+
+.info_block {
+    padding: 0 0 0 50px;
+}
+
+.info_block p {
+    font-size: 14px;
+    color: #bcbcbc;
+    width: 500px;
+}
+
+.info_block h3 {
+    font-size: 30px;
+}
+
+.delivery_info {
+    padding: 0 350px 50px 0;
+    background: url("../images/slider_info/delivery_logo.png") no-repeat 540px;
+}
+
+.guarantee_info {
+    padding: 0 350px 50px 0;
+    background: url("../images/slider_info/guarantee_logo.png") no-repeat 540px;
+    display: none;
+}
+
+.credits_info {
+    padding: 0 350px 50px 0;
+    background: url("../images/slider_info/credit_logo.png") no-repeat 540px;
+    display: none;
+}
+
+
 /* партнёры */
+
+.partners {
+    background: linear-gradient(to right, rgba(241,241,241,1) 0%,rgba(241,241,241,1) 2%,rgba(255,255,255,1) 2%,rgba(255,255,255,1) 100%);
+}
 
 .partners ul {
     display: flex;

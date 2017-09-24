@@ -18,10 +18,10 @@
     height: 28px;
     width: 240px;
     padding: 0 15px 2px 14px;
-    background-color: #3c3c3c;
     border: 1px solid white;
     color: black;
     font-family: "Century Gothic";
+    background: #3c3c3c url("../images/header/search_logo.png") no-repeat 215px;
 }
 
 .user_menu a[href="#"] {
@@ -58,13 +58,19 @@
 
 .site_menu ul li{
     list-style-type: none;
+    font-weight: bold;
 }
 
 .site_menu ul li:first-child{
     margin-right: 300px;
     text-transform: uppercase;
+    background: url("../images/header/plus.png") no-repeat 130px;
 }
 
 .site_menu ul li a{
     color: #3c3c3c;
+}
+
+.site_menu ul li a:first-child {
+    padding-right: 22px;
 }
