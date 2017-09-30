@@ -146,6 +146,83 @@ a {
     font-weight: bold;
 }
 
+.categories ul li a div {
+    width: 155px;
+    height: 155px;
+}
+
+.categories_laptops a div {
+    background: url('../images/categories_icons/laptops_icon.png');
+}
+
+.categories_laptops a div:hover {
+    background: url('../images/categories_icons/laptops_icon_hover.png');
+}
+
+.categories_laptops a:active div {
+    opacity: 0.3;
+}
+
+.categories_peripheral a div {
+    background: url('../images/categories_icons/peripherals_icon.png');
+}
+
+.categories_peripheral a div:hover {
+    background: url('../images/categories_icons/peripherals_icon_hover.png');
+}
+
+.categories_peripheral a:active div {
+    opacity: 0.3;
+}
+
+.categories_accessories a div {
+    background: url('../images/categories_icons/accessories_icon.png');
+}
+
+.categories_accessories a div:hover {
+    background: url('../images/categories_icons/accessories_icon_hover.png');
+}
+
+.categories_accessories a:active div {
+    opacity: 0.3;
+}
+
+.categories_routers a div {
+    background: url('../images/categories_icons/routers_icon.png');
+}
+
+.categories_routers a div:hover {
+    background: url('../images/categories_icons/routers_icon_hover.png');
+}
+
+.categories_routers a:active div {
+    opacity: 0.3;
+}
+
+.categories_lamps a div {
+    background: url('../images/categories_icons/lamps_icon.png');
+}
+
+.categories_lamps a div:hover {
+    background: url('../images/categories_icons/lamps_icon_hover.png');
+}
+
+.categories_lamps a:active div {
+    opacity: 0.3;
+}
+
+.categories_games a div {
+    background: url('../images/categories_icons/games_icon.png');
+}
+
+.categories_games a div:hover {
+    background: url('../images/categories_icons/games_icon_hover.png');
+}
+
+.categories_games a:active div {
+    opacity: 0.3;
+}
+
 /* слайдер инфо */
 
 .slider_info {
@@ -239,6 +316,10 @@ a {
 .partners ul li {
     display: inline;
     list-style-type: none;
+}
+
+.partners ul li:hover {
+    opacity: 0.4;
 }
 
 /* наша компания */
@@ -346,6 +427,24 @@ a {
     font-size: 14.9px;
     font-family: "Century Gothic";
     margin-bottom: 10px;
+    outline: none;
+}
+
+.dispatch form input[type='email']:hover::-webkit-input-placeholder {
+    color: white;
+}
+
+.dispatch form input[type='email']:active::-webkit-input-placeholder {
+    color: #cfab4a;
+}
+
+.dispatch form input[type='email']:active {
+    border-color: white;
+}
+
+.dispatch form input[type='email']:invalid {
+    border-color: #744244;
+    color: #a44848;
 }
 
 .dispatch form input[type='submit' ] {

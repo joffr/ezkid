@@ -46,6 +46,10 @@ footer {
     color: white;
 }
 
+.phone_info a:hover {
+    color: #e9b637;
+}
+
 .map {
     width: 500px;
     text-align: center;
@@ -66,6 +70,10 @@ footer {
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 2px;
+}
+
+.map ul li a:hover {
+    color: #e9b637;
 }
 
 .footer_bottom {
