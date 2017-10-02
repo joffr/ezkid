@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Каталог</title>
     <link type="text/css" rel="stylesheet" href="style/header.css">
+    <link type="text/css" rel="stylesheet" href="style/catalog.css">
+    <link type="text/css" rel="stylesheet" href="style/footer.css">
 </head>
 <body>
     <header>
@@ -14,21 +16,39 @@
                 <form method="post">
                     <input type="search" placeholder="Поиск по сайту">
                 </form>
-                <a href="#">Иван Иванов</a>
-                <a href="#">Корзина</a>
+                <a href="#" class="user">Личный кабинет</a>
+                <a href="#" class="basket">Корзина</a>
             </div>
             <div class="site_menu">
-                <ul>
-                    <li><a href="#">Все категории</a></li>
+                <ul class="menu_categories">
+                    <li>
+                        <a href="#" class="all_categories">Все категории</a>
+                        <ul class="nested_list">
+                            <li>
+                                <ul>
+                                    <li><a href="#">Роутеры</a></li>
+                                    <li><a href="#">Игровые симуляторы</a></li>
+                                    <li><a href="#">Комплектующие</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><a href="#">Периферия</a></li>
+                                    <li><a href="#">Настольные лампы</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Моноблоки и ноутбуки</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Гарантии</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
         </nav>
-    </header>
-    <main>
-        <div class="path">
+        <section class="direction">
             <ul>
                 <li><a href="#">Главная</a></li>
                 <li>/</li>
@@ -36,45 +56,49 @@
                 <li>/</li>
                 <li>Моноблоки и ноутбуки</li>
             </ul>
-        </div>
+        </section>
+    </header>
+    <main>
         <h1>Моноблоки и ноутбуки</h1>
         <div class="content">
             <div class="filter">
                 <h2 class="filter_header">Фильтр</h2>
                 <form method="post">
-                    <div class="price">
-                        <p>Стоимость</p>
+                    <section class="price">
+                        <h3>Стоимость</h3>
                         <input type="range">
-                    </div>
-                    <div class="manufacturers">
-                        <h2>Производители</h2>
+                    </section>
+                    <section class="manufacturers">
+                        <h3>Производители</h3>
+                        <div>
                             <label>Lenovo <input type="checkbox" value=""></label>
                             <label>Philips <input type="checkbox" value=""></label>
                             <label>Acer <input type="checkbox" value=""></label>
                             <label>HP <input type="checkbox" value=""></label>
-                    </div>
-                    <div class="video_card">
-                        <h2>Видеокарта</h2>
-                            <label>Встроенная <input type="radio" value=""></label>
-                            <label>AMD <input type="radio" value=""></label>
-                            <label>NVidia <input type="radio" value=""></label>
-                    </div>
-                    <div class="apply">
+                        </div>
+                    </section>
+                    <section class="video_card">
+                        <h3>Видеокарта</h3>
+                        <label>Встроенная <input type="radio" value=""></label>
+                        <label>AMD <input type="radio" value=""></label>
+                        <label>NVidia <input type="radio" value=""></label>
+                    </section>
+                    <section class="apply">
                         <input type="submit" value="Применить">
-                        <input type="reset" value="Сбросить">
-                    </div>
+                        <input type="reset" value="Сбросить фильтр">
+                    </section>
                 </form>
             </div>
             <div class="catalog">
-                <div class="catalog_header">
+                <section class="catalog_header">
                     <h2>Сортировка</h2>
                     <ul>
                         <li><a href="#">По цене</a></li>
                         <li><a href="#">По типу</a></li>
                         <li><a href="#">По популярности</a></li>
                     </ul>
-                </div>
-                <div class="goods">
+                </section>
+                <section class="goods">
                     <div class="product_one">
                         <div class="presence">
                             <p>В наличиии</p>
@@ -127,31 +151,33 @@
                         <p>11000 <span>руб.</span></p>
                         <a href="#">В корзину</a>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </main>
     <footer>
         <div class="footer_top">
-            <div class="info">
+            <section class="info">
                 <div class="address">
                     <a href="index.html"><img src="images/magno_logo.png"></a>
-                    <p>Г. Москва ул.Строителей 15 к.1 офис 123</p>
+                    <p>Г. Москва ул. Строителей 15 к 1 офис 456</p>
                 </div>
-                <div class="user_links">
-                    <a href="#">Личный кабинет</a>
-                    <a href="#">Корзина</a>
-                </div>
-            </div>
-            <a href="tel:+78005000616">8-800-5000-616</a>
-            <div class="map">
+                <ul class="user_links">
+                    <li><a href="#" class="user">Личный кабинет</a></li>
+                    <li><a href="#" class="basket">Корзина</a></li>
+                </ul>
+            </section>
+            <section class="phone_info">
+                <a href="tel:+78005000616">8-800-5000-616</a>
+            </section>
+            <section class="map">
                 <ul>
-                    <li><a href="#">Контакты</a></li>
                     <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
                     <li><a href="#">Гарантия</a></li>
                 </ul>
                 <img src="images/footer/map.png">
-            </div>
+            </section>
         </div>
         <div class="footer_bottom">
             <p>Все права защищены 2017</p>
