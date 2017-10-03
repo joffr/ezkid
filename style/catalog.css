@@ -35,11 +35,10 @@ main h1 {
 }
 
 .filter {
-    /*background-color: #606060;*/
+    background-color: #606060;
     width: 360px;
-    position: absolute;
-    left: 100px;
-    background: linear-gradient(to bottom, );
+    float: left;
+    margin-left: 100px;
 }
 
 .filter h3 {
@@ -54,7 +53,7 @@ main h1 {
 
 .filter_header {
     text-transform: uppercase;
-    /*background-color: #3c3c3c;*/
+    background-color: #3c3c3c;
     padding: 25px;
     color: white;
     letter-spacing: 2px;
@@ -122,6 +121,11 @@ main h1 {
     text-align: center;
 }
 
+.catalog {
+    float:right;
+    width: 800px;
+}
+
 .catalog_header {
     width: 100%;
     background-color: #f0f0f0;
@@ -153,6 +157,83 @@ main h1 {
     color: #3c3c3c;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin-left: 490px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 120px;
 }
+
+.goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.product {
+    margin-right: 50px;
+    border: 1px solid #cdcccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 250px;
+    text-align: center;
+}
+
+.product_count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.product_count a {
+    color: #e9b637;
+    border: 1px solid #dfdfdf;
+    padding: 2px 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.product_count p {
+    color: #a7a7a7;
+    font-size: 12px;
+}
+
+.product_price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.basket_button {
+    background-color: #e9b637;
+    color: #3c3c3c;
+    padding: 10px 80px;
+    font-size: 13px;
+}
+
+.presence {
+    background-color: #709f39;
+    border: 1px solid #acabab;
+    color: white;
+    width: 80px;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    position: relative;
+    float: right;
+    top: -20px;
+    right: -20px;
+}
+
+.currency {
+    color: #e9b637;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.currency span {
+    color: #3c3c3c;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
