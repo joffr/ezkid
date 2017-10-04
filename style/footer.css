@@ -43,7 +43,7 @@ footer {
 }
 
 .phone_info a {
-    font-size: 26px;
+    font-size: 20px;
     color: white;
 }
 
@@ -92,4 +92,8 @@ footer {
 
 .footer_bottom ul li {
     display: inline;
+}
+
+.social ul li a img:active {
+    opacity: 0.3;
 }
