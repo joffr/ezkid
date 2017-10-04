@@ -54,28 +54,34 @@ main h1 {
 .filter_header {
     text-transform: uppercase;
     background-color: #3c3c3c;
-    padding: 25px;
+    padding: 20px;
     color: white;
     letter-spacing: 2px;
+    margin-top: 0;
 }
 
 .price {
-    padding: 5px 30px 35px;
+    padding: 0 30px 15px;
     border-bottom: 1px solid #4d4d4d;
+}
+
+.price h3 {
+    margin: 0;
 }
 
 .manufacturers {
     border-bottom: 1px solid #4d4d4d;
-    padding: 5px 30px 25px;
+    padding: 5px 30px 10px;
 }
 
 .manufacturers h3 {
     margin-bottom: 25px;
 }
 
-.manufacturers div {
-    display: flex;
-    flex-wrap: wrap;
+.manufacturers table td {
+    text-align: left;
+    width: 300px;
+    padding: 0 0 15px;
 }
 
 .manufacturers div label {
@@ -89,6 +95,10 @@ main h1 {
 
 .video_card h3 {
     margin-bottom: 25px;
+}
+
+.video_card table td {
+    padding: 0 0 15px;
 }
 
 .filter input[type='submit'] {
@@ -106,6 +116,15 @@ main h1 {
     cursor: pointer;
 }
 
+.filter input[type='submit']:hover {
+    background: none;
+    border: 1px solid #e9b637;
+}
+
+.filter input[type='submit']:active {
+    opacity: 0.4;
+}
+
 .filter input[type='reset'] {
     border: none;
     outline: none;
@@ -115,6 +134,81 @@ main h1 {
     background: none;
     margin-bottom: 15px;
     cursor: pointer;
+}
+
+.filter input[type='reset']:active {
+    opacity: 0.4;
+}
+
+.filter input[type='checkbox'] {
+    outline: none;
+}
+
+.filter input[type='checkbox'] + label {
+    cursor: pointer;
+}
+
+.filter input[type='checkbox']:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+
+.filter input[type='checkbox']:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 30px;
+}
+
+.filter input[type='checkbox']:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background: #606060;
+    border: 2px solid white;
+}
+
+.filter input[type='checkbox']:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: -10px;
+    left: 2px;
+    color: white;
+    font-size: 25px;
+}
+
+.filter input[type='radio'] + label {
+    cursor: pointer;
+}
+
+.filter input[type='radio']:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+
+.filter input[type='radio']:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 30px;
+}
+
+.filter input[type='radio']:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    background-color: #606060;
+    border: 2px solid #e9b637;
+}
+
+.filter input[type='radio']:checked + label:before {
+    content: '';
+    background-color: #e9b637;
+    border-color: white;
 }
 
 .apply {
@@ -166,6 +260,7 @@ main h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 50px;
+    padding-bottom: 0;
 }
 
 .product {
@@ -204,6 +299,22 @@ main h1 {
     align-items: center;
 }
 
+.product_one img {
+    width: 200px;
+}
+
+.product_two img {
+    width: 261px;
+}
+
+.product_three img {
+    width: 180px;
+}
+
+.product_four img {
+    width: 195px;
+}
+
 .basket_button {
     background-color: #e9b637;
     color: #3c3c3c;
@@ -235,5 +346,51 @@ main h1 {
     color: #3c3c3c;
     text-transform: uppercase;
     font-size: 18px;
+}
+
+.pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    position: relative;
+    left: 100px;
+    margin-bottom: 30px;
+}
+
+.pages ul li {
+    display: inline;
+    list-style-type: none;
+    color: #cacaca;
+}
+
+.pages a {
+    color: #cacaca;
+}
+
+.change_page {
+    color: #cacaca;
+    border: 1px solid #cacaca;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.change_page:hover {
+    color: #edc029;
+    border-color: #edc029;
+}
+
+.pages ul li a {
+    border-radius: 100px;
+    padding: 5px 10px;
+    border: 1px solid #cacaca;
+}
+
+.pages ul li:first-child {
+    border-radius: 100px;
+    padding: 5px 10px;
+    border: 1px solid #edc029;
+    color: #edc029;
 }
 

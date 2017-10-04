@@ -70,18 +70,27 @@
                     </section>
                     <section class="manufacturers">
                         <h3>Производители</h3>
-                        <div>
-                            <label>Lenovo <input type="checkbox" value=""></label>
-                            <label>Philips <input type="checkbox" value=""></label>
-                            <label>Acer <input type="checkbox" value=""></label>
-                            <label>HP <input type="checkbox" value=""></label>
-                        </div>
+                        <table>
+                            <tr>
+                                <td><input type="checkbox" value="" id="lenovo"><label for="lenovo">Lenovo</label></td>
+                                <td><input type="checkbox" value="" id="philips"><label for="philips">Philips</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value="" id="acer"><label for="acer">Acer</label></td>
+                                <td><input type="checkbox" value="" id="hp"><label for="hp">HP</label></td>
+                            </tr>
+                        </table>
                     </section>
                     <section class="video_card">
                         <h3>Видеокарта</h3>
-                        <label>Встроенная <input type="radio" value=""></label>
-                        <label>AMD <input type="radio" value=""></label>
-                        <label>NVidia <input type="radio" value=""></label>
+                        <table>
+                            <tr>
+                                <td><input type="radio" value="" name="video_card" id="nvidia"><label for="nvidia">NVidia</label></td>
+                                <td><input type="radio" value="" name="video_card" id="amd"><label for="amd">AMD</label></td></tr>
+                            <tr>
+                                <td><input type="radio" value="" name="video_card" id="built-in"><label for="built-in">Встроенная</label></td>
+                                <td></td></tr>
+                        </table>
                     </section>
                     <section class="apply">
                         <input type="submit" value="Применить">
@@ -159,6 +168,15 @@
                         </div>
                         <a href="#" class="basket_button">В корзину</a>
                     </div>
+                </section>
+                <section class="pages">
+                    <a href="#" class="change_page">Предыдущая</a>
+                    <ul>
+                        <li>1</li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                    </ul>
+                    <a href="#" class="change_page">Следующая</a>
                 </section>
             </div>
         </div>
