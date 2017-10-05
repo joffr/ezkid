@@ -51,6 +51,10 @@ footer {
     color: #e9b637;
 }
 
+.phone_info a:active {
+    color: lightgray;
+}
+
 .map {
     width: 500px;
     text-align: center;
@@ -96,4 +100,8 @@ footer {
 
 .social ul li a img:active {
     opacity: 0.3;
+}
+
+.social img:hover {
+    filter: invert(1);
 }

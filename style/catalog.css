@@ -288,6 +288,16 @@ main h1 {
     font-size: 13px;
 }
 
+.product_count a:hover {
+    color: white;
+    background-color: #e8b737;
+    background-color: #e8b737;
+}
+
+.product_count a:active {
+    opacity: 0.5;
+}
+
 .product_count p {
     color: #a7a7a7;
     font-size: 12px;
@@ -320,6 +330,16 @@ main h1 {
     color: #3c3c3c;
     padding: 10px 80px;
     font-size: 13px;
+}
+
+.basket_button:hover {
+    background: none;
+    border: 1px solid #e9b637;
+    box-shadow: 0 0 5px #e9b637;
+}
+
+.basket_button:active {
+    opacity: 0.6;
 }
 
 .presence {
@@ -381,10 +401,23 @@ main h1 {
     border-color: #edc029;
 }
 
+.change_page:active {
+    opacity: 0.7;
+}
+
 .pages ul li a {
     border-radius: 100px;
     padding: 5px 10px;
     border: 1px solid #cacaca;
+}
+
+.pages ul li a:hover {
+    border-color: #e9b637;
+    opacity: 0.6;
+}
+
+.pages ul li a:active {
+    opacity: 1;
 }
 
 .pages ul li:first-child {
