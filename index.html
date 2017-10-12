@@ -50,6 +50,45 @@
         </nav>
     </header>
     <main>
+        <section class="modal modal_hide">
+            <div class="close_modal"><p>Х</p></div>
+            <h2>Личный кабинет</h2>
+            <p>Введите, пожалуйста, свой логин и пароль</p>
+            <form>
+                <input type="text" placeholder="Логин">
+                <input type="password" placeholder="Пароль">
+                <input type="checkbox" id="remember_user"> <label for="remember_user">Запомнить меня</label>
+                <a href="#">Я забыл пароль!</a>
+                <input type="submit" value="Войти">
+            </form>
+        </section>
+        <section class="modal_map map_hide">
+            <div class="close_map">×</div>
+            <img src="images/modal_map/map-big.jpg.png">
+        </section>
+        <section class="write_us">
+            <form>
+                <table>
+                    <tr>
+                        <td><label>Ваше имя:</label></td>
+                        <td><label>Ваш e-mail:</label></td>
+                    </tr>
+                    <tr>
+                        <td class="write_us_name"><input type="text" placeholder="Представьтесь, пожалуйста"></td>
+                        <td class="write_us_email"><input type="email" placeholder="Для отправки ответа"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="text_letter">Текст письма:</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea id="text_letter" placeholder="В свободное форме"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Отправить"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
         <section class="slider_promo">
             <input type="radio" name="slider_promo" id="frame_1" checked>
             <label for="frame_1"></label>
@@ -118,7 +157,7 @@
         </section>
         <section class="slider_info">
             <ul class="info_buttons">
-                <li><button class="delivery_button" onclick="choose_delivery ()">Доставка</button></li>
+                <li><button class="delivery_button" onclick="choose_delivery()">Доставка</button></li>
                 <li><a href="#" class="guarantee_button">Гарантия</a></li>
                 <li><a href="#" class="credit_button">Кредит</a></li>
             </ul>
@@ -192,7 +231,7 @@
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Гарантия</a></li>
                 </ul>
-                <img src="images/footer/map.png">
+                <img src="images/footer/map.png" class="map_img">
             </section>
         </div>
         <div class="footer_bottom">
@@ -205,6 +244,43 @@
             </ul>
         </div>
     </footer>
-    <script src="scripts/slider_info.js" type="javascript"></script>
+    <script language="JavaScript" type="text/JavaScript">
+        var user = document.querySelector(".user");
+        var modal = document.querySelector(".modal");
+        var close_modal = document.querySelector(".close_modal");
+        var isModalHide = true;
+        user.addEventListener('click', function () {
+            if (isModalHide) {
+                modal.classList.remove("modal_hide");
+                isModalHide = false;
+            } else {
+                modal.classList.add("modal_hide");
+                isModalHide = true;
+            }
+        });
+        close_modal.addEventListener('click', function () {
+            modal.classList.add("modal_hide");
+            isHide = true;
+        });
+
+        var modal_map = document.querySelector(".modal_map");
+        var close_map = document.querySelector(".close_map");
+        var map = document.querySelector(".map_img");
+        var isMapHide = true;
+        map.addEventListener('click', function () {
+            if (isMapHide) {
+                modal_map.classList.remove("map_hide");
+                isMapHide = false;
+            } else {
+                modal_map.classList.add("map_hide");
+                isMapHide = true;
+            }
+        });
+        close_map.addEventListener('click', function () {
+            modal_map.classList.add("map_hide");
+            isMapHide = true;
+        })
+
+    </script>
 </body>
 </html>
