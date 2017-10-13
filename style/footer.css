@@ -98,13 +98,10 @@ footer {
     display: inline;
 }
 
-.social ul li a img:active {
-    opacity: 0.3;
+.vk {
+    background: url("../images/footer/vk.png");
 }
 
-.social img:hover {
-    filter: invert(1);
-}
 
 .map_img {
     cursor: pointer;
